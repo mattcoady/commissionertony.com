@@ -1,425 +1,511 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Fredericton Commissioner of Oaths</title>
-    <link rel="amphtml" href="index_amp.html">
-    <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.png">
-    <link rel="preconnect" href="https://fonts.gstatic.com/">
-    <link rel="preconnect" href="https://ajax.googleapis.com/">
-    <meta name="theme-color" content="#ff502c">
-    <link rel="manifest" href="/manifest.json">
-    <meta name="description" content="Call Tony today for Frederictons Top Commissioner of Oaths."/>
-    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <link rel="amphtml" href="index_amp.html" />
+    <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" />
+    <link rel="preconnect" href="https://ajax.googleapis.com/" />
+    <meta name="theme-color" content="#ff502c" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta
+      name="description"
+      content="Call Tony today for Frederictons Top Commissioner of Oaths."
+    />
+    <meta
+      name="viewport"
+      content="width=device-width,minimum-scale=1,initial-scale=1"
+    />
     <style>
-        body,
-        nav {
-            color: #282e3e
-        }
+      body,
+      nav {
+        color: #282e3e;
+      }
 
-        .contact,
-        .headline,
-        .subheadline,
-        footer h3 {
-            text-transform: uppercase
-        }
+      .contact,
+      .headline,
+      .subheadline,
+      footer h3 {
+        text-transform: uppercase;
+      }
 
-        body {
-            margin: 0;
-            font-family: 'Source Sans Pro', sans-serif;
-            background: #faf9f5
-        }
+      body {
+        margin: 0;
+        font-family: "Source Sans Pro", sans-serif;
+        background: #faf9f5;
+      }
 
-        img {
-            max-width: 100%
-        }
+      img {
+        max-width: 100%;
+      }
 
-        nav {
-            box-shadow: 1px 4px 5px 2px rgba(0, 0, 0, .11);
-            padding: 20px
-        }
+      nav {
+        box-shadow: 1px 4px 5px 2px rgba(0, 0, 0, 0.11);
+        padding: 20px;
+      }
 
-        .wrap {
-            max-width: 1200px;
-            display: flex;
-            justify-content: space-around;
-            width: 100%;
-            margin: 0 auto;
-        }
+      .wrap {
+        max-width: 1200px;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin: 0 auto;
+      }
 
-        header .wrap {
-	        align-items: flex-end;
-        }
+      header .wrap {
+        align-items: flex-end;
+      }
 
-        .header-left,
-        .logo-img,
-        .title-wrap {
-            display: inline-block
-        }
+      .header-left,
+      .logo-img,
+      .title-wrap {
+        display: inline-block;
+      }
 
-        .logo {
-            margin-right: auto
-        }
+      .logo {
+        margin-right: auto;
+      }
 
-        .logo-img {
-            width: 40px;
-            margin-right: 20px
-        }
+      .logo-img {
+        width: 40px;
+        margin-right: 20px;
+      }
 
-        .logo-img path,
-        .logo-img polygon {
-            fill: #282e3e
-        }
+      .logo-img path,
+      .logo-img polygon {
+        fill: #282e3e;
+      }
 
-        header {
-            background: url(./img/bg.jpg) center center no-repeat #282e3e;
-            background-size: cover
-        }
+      header {
+        background: url(./img/bg.jpg) center center no-repeat #282e3e;
+        background-size: cover;
+      }
 
-        .title-wrap {
-            vertical-align: top
-        }
+      .title-wrap {
+        vertical-align: top;
+      }
 
-        .title {
-            font-weight: 900;
-            font-size: 26px
-        }
+      .title {
+        font-weight: 900;
+        font-size: 26px;
+      }
 
-        .subtitle {
-            font-family: Yellowtail, sans-serif;
-            text-align: left;
-            font-size: 35px
-        }
+      .subtitle {
+        font-family: Yellowtail, sans-serif;
+        text-align: left;
+        font-size: 35px;
+      }
 
-        .contact,
-        .header-right,
-        footer {
-            text-align: center;
-            color: #fff
-        }
+      .contact,
+      .header-right,
+      footer {
+        text-align: center;
+        color: #fff;
+      }
 
-        .header-left {
-            vertical-align: bottom;
-            max-width: 400px;
-            flex-grow: 1
-        }
+      .header-left {
+        vertical-align: bottom;
+        max-width: 400px;
+        flex-grow: 1;
+      }
 
-        .headshot {
-            max-width: 100%;
-            display: block;
-            padding: 80px 5% 0;
-            box-sizing: border-box
-        }
+      .headshot {
+        max-width: 100%;
+        display: block;
+        padding: 80px 5% 0;
+        box-sizing: border-box;
+      }
 
-        .money .left,
-        .services .right {
-            box-sizing: border-box;
-            max-width: 500px
-        }
+      .money .left,
+      .services .right {
+        box-sizing: border-box;
+        max-width: 500px;
+      }
 
-        .header-right {
-            vertical-align: top;
-            display: inline-flex;
-            align-items: center;
-            flex-direction: column;
-            justify-content: center;
-            flex-grow: 2;
-            box-sizing: border-box;
-                        align-self: center;
-        }
+      .header-right {
+        vertical-align: top;
+        display: inline-flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        flex-grow: 2;
+        box-sizing: border-box;
+        align-self: center;
+      }
 
-        .headline,
-        .subheadline {
-            font-size: 30px;
-            font-weight: 600;
-            margin: .25em
-        }
+      .headline,
+      .subheadline {
+        font-size: 30px;
+        font-weight: 600;
+        margin: 0.25em;
+      }
 
-        .headline {
-            font-size: 60px
-        }
+      .headline {
+        font-size: 60px;
+      }
 
-        .contact {
-            background: #ff502c;
-            display: flex;
-            align-items: center;
-            padding: 20px;
-            font-size: 30px;
-            justify-content: space-around
-        }
+      .contact {
+        background: #ff502c;
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        font-size: 30px;
+        justify-content: space-around;
+      }
 
-        .contact-number {
-            color: #fff;
-            text-decoration: none;
-            font-size: 54px
-        }
+      .contact-number {
+        color: #fff;
+        text-decoration: none;
+        font-size: 54px;
+      }
 
-        .contact-email {
-	        color: #fff;
-			font-size: 50px;
-        }
+      .contact-email {
+        color: #fff;
+        font-size: 50px;
+      }
 
-        section {
-            font-size: 18px
-        }
+      section {
+        font-size: 18px;
+      }
 
-        .services {
-            background: #3f3b40;
-            color: #fff
-        }
+      .services {
+        background: #3f3b40;
+        color: #fff;
+      }
 
+      .money h2,
+      .services h2 {
+        font-size: 46px;
+        margin-top: 0;
+      }
+
+      .money h2:after,
+      .services h2:after {
+        content: "";
+        display: block;
+        width: 40%;
+        height: 2px;
+        background: #fff;
+        margin-top: 15px;
+      }
+
+      .services .left {
+        background: url(./img/sign-document.jpg) center no-repeat;
+      }
+
+      .services .right {
+        padding: 20px;
+        display: flex;
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.75);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .money > div,
+      .services > div {
+        flex-grow: 1;
+      }
+
+      .money .left {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 350px;
+      }
+
+      address,
+      footer h3 {
+        padding: 1em;
+      }
+
+      .money .right {
+        background: url(./img/save-money.jpg) center no-repeat;
+      }
+
+      .money h2:after {
+        background: #282e3e;
+      }
+
+      .money .section-image,
+      .services .section-image {
+        background-size: cover;
+        min-width: 50%;
+        min-height: 200px;
+      }
+
+      footer {
+        background: #3f3b40;
+      }
+
+      footer h3 {
+        color: #ff502c;
+        font-size: 30px;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+      }
+
+      .name {
+        font-size: 35px;
+      }
+
+      .badge {
+        max-width: 250px;
+      }
+
+      @media all and (max-width: 800px) {
+        section .wrap {
+          flex-direction: column;
+        }
         .money h2,
         .services h2 {
-            font-size: 46px;
-            margin-top: 0
+          text-align: center;
         }
-
         .money h2:after,
         .services h2:after {
-            content: "";
-            display: block;
-            width: 40%;
-            height: 2px;
-            background: #fff;
-            margin-top: 15px
+          margin-left: auto;
+          margin-right: auto;
         }
-
-        .services .left {
-            background: url(./img/sign-document.jpg) center no-repeat
-        }
-
+        .money .left,
         .services .right {
-            padding: 20px;
-            display: flex;
-            text-shadow: 0 1px 1px rgba(0, 0, 0, .75);
-            flex-direction: column;
-            justify-content: center;
-            align-items: center
+          margin: 0 auto;
         }
-
-        .money>div,
-        .services>div {
-            flex-grow: 1
+        .services .wrap {
+          flex-direction: column-reverse;
         }
-
-        .money .left {
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            min-height: 350px
+        header .wrap {
+          flex-direction: column-reverse;
+          align-items: center;
         }
-
-        address,
-        footer h3 {
-            padding: 1em
+        .logo,
+        .subtitle {
+          margin-right: 0;
+          text-align: left;
+          display: flex;
+          align-items: center;
         }
-
-        .money .right {
-            background: url(./img/save-money.jpg) center no-repeat
+        .logo-img {
+          width: 30px;
+          margin-right: 15px;
         }
-
-        .money h2:after {
-            background: #282e3e
+        .title {
+          font-size: 18px;
         }
-
-        .money .section-image,
-        .services .section-image {
-            background-size: cover;
-            min-width: 50%;
-            min-height: 200px
+        .headshot {
+          padding-top: 20px;
+          padding-left: 15%;
+          padding-right: 15%;
         }
-
-        footer {
-            background: #3f3b40
+        .subheadline {
+          font-size: 20px;
         }
-
-        footer h3 {
-            color: #ff502c;
-            font-size: 30px;
-            margin: 0;
-            display: flex;
-            justify-content: center
+        .headline {
+          font-size: 30px;
         }
-
-        .name {
-            font-size: 35px
+        .header-left {
+          width: 63%;
+        }
+        .price {
+          font-size: 1.2em;
+          font-weight: bold;
+        }
+        .header-right {
+          width: 100%;
+          padding: 20px;
+        }
+        .contact,
+        .contact .wrap {
+          flex-direction: column;
+          text-align: center;
         }
 
         .badge {
-	        max-width: 250px;
+          max-width: 150px;
         }
-
-        @media all and (max-width:800px) {
-            section .wrap {
-                flex-direction: column
-            }
-            .money h2,
-            .services h2 {
-                text-align: center
-            }
-            .money h2:after,
-            .services h2:after {
-                margin-left: auto;
-                margin-right: auto
-            }
-            .money .left,
-            .services .right {
-                margin: 0 auto
-            }
-            .services .wrap {
-                flex-direction: column-reverse
-            }
-            header .wrap {
-                flex-direction: column-reverse;
-                align-items: center
-            }
-            .logo,
-            .subtitle {
-                margin-right: 0;
-                text-align: left;
-                display: flex;
-                align-items: center
-            }
-            .logo-img {
-                width: 30px;
-                margin-right: 15px
-            }
-            .title {
-                font-size: 18px
-            }
-            .headshot {
-                padding-top: 20px;
-                padding-left: 15%;
-                padding-right: 15%
-            }
-            .subheadline {
-                font-size: 20px
-            }
-            .headline {
-                font-size: 30px
-            }
-            .header-left {
-                width: 63%
-            }
-            .price {
-                font-size: 1.2em;
-                font-weight: bold;
-            }
-            .header-right {
-                width: 100%;
-                padding: 20px
-            }
-            .contact,
-            .contact .wrap {
-                flex-direction: column;
-                text-align: center
-            }
-
-            .badge {
-	            max-width: 150px;
-            }
-        }
+      }
     </style>
-    <script type="application/ld+json">{"@context":"http://schema.org","@type":"LegalService","address":{"@type":"PostalAddress","addressLocality":"Fredericton","addressRegion":"NB","postalCode":"E3B 1B6","streetAddress":"446 Queen Street"},"description":"Fast, fully certified commissioner of oaths with over 25 years of experience.","name":"Fredericton's Commissioner of Oaths","telephone":"506-259-4091","openingHours":"Su,Mo,Tu,We,Th,Fr,Sa 07:30-22:00","paymentAccepted":"Cash","priceRange":"$","geo":{"@type":"GeoCoordinates","latitude":"45.96","longitude":"-66.64"},"sameAs":["https://www.facebook.com/frederictoncommissionerofoaths/"],"image":"http://commissionertony.com/logo.png"}</script>
-</head>
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "LegalService",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Fredericton",
+          "addressRegion": "NB",
+          "postalCode": "E3B 1B6",
+          "streetAddress": "446 Queen Street"
+        },
+        "description": "Fast, fully certified commissioner of oaths with over 25 years of experience.",
+        "name": "Fredericton's Commissioner of Oaths",
+        "telephone": "506-259-4091",
+        "openingHours": "Su,Mo,Tu,We,Th,Fr,Sa 07:30-22:00",
+        "paymentAccepted": "Cash",
+        "priceRange": "$",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "45.96",
+          "longitude": "-66.64"
+        },
+        "sameAs": ["https://www.facebook.com/frederictoncommissionerofoaths/"],
+        "image": "http://commissionertony.com/logo.png"
+      }
+    </script>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-TPXST73");
+    </script>
+    <!-- End Google Tag Manager -->
+  </head>
 
-<body>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-TPXST73"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden;"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <nav>
-        <div class="wrap">
-            <div class="logo">
-                <div class="logo-img">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 54 96" style="max-width: 200px">
-                        <polygon points="0,0 54,0 47,25 7,25 " />
-                        <path d="M11,29c0,0,3.8,15.9-11,31c0,0,20.3,12.7,25,36V61.5h-8v-4h20v4h-8V96c0,0,3.7-20.3,25-36c0,0-14-13.4-11-31H11z" />
-                    </svg>
-                </div>
-                <div class="title-wrap">
-                    <div class="subtitle">Tony Coady</div>
-                    <div class="title">Fredericton's Commissioner of Oaths</div>
-                </div>
-            </div>
+      <div class="wrap">
+        <div class="logo">
+          <div class="logo-img">
+            <svg
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewbox="0 0 54 96"
+              style="max-width: 200px;"
+            >
+              <polygon points="0,0 54,0 47,25 7,25 " />
+              <path
+                d="M11,29c0,0,3.8,15.9-11,31c0,0,20.3,12.7,25,36V61.5h-8v-4h20v4h-8V96c0,0,3.7-20.3,25-36c0,0-14-13.4-11-31H11z"
+              />
+            </svg>
+          </div>
+          <div class="title-wrap">
+            <div class="subtitle">Tony Coady</div>
+            <div class="title">Fredericton's Commissioner of Oaths</div>
+          </div>
         </div>
-        <div class="badge">
-        </div>
+      </div>
+      <div class="badge"></div>
     </nav>
     <main>
-        <header>
-            <div class="wrap">
-                <div class="header-left"><img class="headshot" src="./img/tony-coady-commissioner-of-oaths.png" alt="Tony Coady Commissioner of Oaths"></div>
-                <div class="header-right">
-	                <small class="subheadline">Fast and courteous</small>
-                    <h1 class="headline">Affidavits and Oaths</h1>
-                    		<div class="badge">
-	                    		<a href="https://threebestrated.ca/notary-public-in-fredericton-nb" target="_blank" rel="noopener">
-								<img src="./img/tonycoady-fredericton-best3.png" alt="ThreeBestRated Top of 2018 Mark of Excellence"/>
-	                    		</a>
-							</div>
-                </div>
+      <header>
+        <div class="wrap">
+          <div class="header-left">
+            <img
+              class="headshot"
+              src="./img/tony-coady-commissioner-of-oaths.png"
+              alt="Tony Coady Commissioner of Oaths"
+            />
+          </div>
+          <div class="header-right">
+            <small class="subheadline">Fast and courteous</small>
+            <h1 class="headline">Affidavits and Oaths</h1>
+            <div class="badge">
+              <a
+                href="https://threebestrated.ca/notary-public-in-fredericton-nb"
+                target="_blank"
+                rel="noopener"
+              >
+                <img
+                  src="./img/tonycoady-fredericton-best3.png"
+                  alt="ThreeBestRated Top of 2018 Mark of Excellence"
+                />
+              </a>
             </div>
-        </header>
-        <div class="contact">
-            <div class="wrap">
-                <div class="left">Book your
-                    <br>appointment now!</div>
-                <div class="right"><a class="contact-number" href="tel:+15062594091">506-259-4091</a> or <a class="contact-email" href="mailto:agcoady@gmail.com">Email</a></div>
-            </div>
+          </div>
         </div>
-        <section class="services" id="services">
-            <div class="wrap">
-                <div class="left section-image"></div>
-                <div class="right">
-                    <h2>Services</h2>
-                    <ul>
-                        <li>Separation Agreements</li>
-                        <li>Affidavit of Service</li>
-                        <li>Declaration for Pension</li>
-                        <li>Proof of Loss (Insurance Claims)</li>
-                        <li>Affidavit of Name Change</li>
-                        <li>Affidavit of Small Real Estate</li>
-                        <li>Financial Affidavit</li>
-                        <li>Affidavit of Death</li>
-                        <li>ID Theft Affidavit</li>
-                        <li>Affidavit of Residence</li>
-                        <li>Registration Affidavit</li>
-                        <li>Affidavits for Legal Proceedings</li>
-                        <li>Brewery License</li>
-                        <li>MANY MORE!</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <section class="money" id="save-money">
-            <div class="wrap">
-                <div class="left">
-                    <h2>Save your money</h2>
-                    <div class="price">Only $20</div>You do not need to pay lawyer fees for Commissioner of Oaths services. Tony Coady is a professional certified Commissioner of Oaths with over 30 years of experience in legal documents.</div>
-                <div class="right section-image"></div>
-            </div>
-        </section>
+      </header>
+      <div class="contact">
+        <div class="wrap">
+          <div class="left">Book your <br />appointment now!</div>
+          <div class="right">
+            <a class="contact-number" href="tel:+15062594091">506-259-4091</a>
+            or
+            <a class="contact-email" href="mailto:agcoady@gmail.com">Email</a>
+          </div>
+        </div>
+      </div>
+      <section class="services" id="services">
+        <div class="wrap">
+          <div class="left section-image"></div>
+          <div class="right">
+            <h2>Services</h2>
+            <ul>
+              <li>Separation Agreements</li>
+              <li>Affidavit of Service</li>
+              <li>Declaration for Pension</li>
+              <li>Proof of Loss (Insurance Claims)</li>
+              <li>Affidavit of Name Change</li>
+              <li>Affidavit of Small Real Estate</li>
+              <li>Financial Affidavit</li>
+              <li>Affidavit of Death</li>
+              <li>ID Theft Affidavit</li>
+              <li>Affidavit of Residence</li>
+              <li>Registration Affidavit</li>
+              <li>Affidavits for Legal Proceedings</li>
+              <li>Brewery License</li>
+              <li>MANY MORE!</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="money" id="save-money">
+        <div class="wrap">
+          <div class="left">
+            <h2>Save your money</h2>
+            <div class="price">Only $20</div>
+            You do not need to pay lawyer fees for Commissioner of Oaths
+            services. Tony Coady is a professional certified Commissioner of
+            Oaths with over 30 years of experience in legal documents.
+          </div>
+          <div class="right section-image"></div>
+        </div>
+      </section>
     </main>
     <footer>
-        <h3>Book your appointment Now</h3><a class="contact-number" href="tel:+15062594091">506-259-4091</a><br/><a class="contact-email" href="mailto:agcoady@gmail.com">Email</a><address><span class="name">Tony Coady</span><br>446 Queen Street<br>Fredericton, New Brunswick<br>E3B 1B6</address></footer>
+      <h3>Book your appointment Now</h3>
+      <a class="contact-number" href="tel:+15062594091">506-259-4091</a><br /><a
+        class="contact-email"
+        href="mailto:agcoady@gmail.com"
+        >Email</a
+      >
+      <address>
+        <span class="name">Tony Coady</span><br />446 Queen Street<br />Fredericton,
+        New Brunswick<br />E3B 1B6
+      </address>
+    </footer>
     <script>
-        WebFontConfig = {
-                google: {
-                    families: ["Source Sans Pro:400,600", "Yellowtail"]
-                }
-            },
-            function(a) {
-                var b = a.createElement("script"),
-                    c = a.scripts[0];
-                b.src = "https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js", b.async = !0, c.parentNode.insertBefore(b, c)
-            }(document);
+      (WebFontConfig = {
+        google: {
+          families: ["Source Sans Pro:400,600", "Yellowtail"],
+        },
+      }),
+        (function (a) {
+          var b = a.createElement("script"),
+            c = a.scripts[0];
+          (b.src =
+            "https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"),
+            (b.async = !0),
+            c.parentNode.insertBefore(b, c);
+        })(document);
     </script>
-    <!--<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create', 'UA-16096077-16', 'auto');ga('send', 'pageview');</script>-->
-    <script async="async" src="https://cdn.jsdelivr.net/ga-lite/latest/ga-lite.min.js"></script>
-    <script>
-        var galite = galite || {};
-        galite.UA = "UA-16096077-16";
-    </script>
-</body>
-
+  </body>
 </html>
