@@ -108,13 +108,14 @@
         vertical-align: bottom;
         max-width: 400px;
         flex-grow: 1;
+        padding: 80px 2% 0;
       }
 
       .headshot {
-        max-width: 100%;
+        max-width: 90%;
         display: block;
-        padding: 80px 5% 0;
         box-sizing: border-box;
+        height: auto;
       }
 
       .money .left,
@@ -257,6 +258,11 @@
         max-width: 250px;
       }
 
+      .badge img {
+        max-width: 100%;
+        height: auto;
+      }
+
       @media all and (max-width: 800px) {
         section .wrap {
           flex-direction: column;
@@ -295,11 +301,6 @@
         .title {
           font-size: 18px;
         }
-        .headshot {
-          padding-top: 20px;
-          padding-left: 15%;
-          padding-right: 15%;
-        }
         .subheadline {
           font-size: 20px;
         }
@@ -307,7 +308,8 @@
           font-size: 30px;
         }
         .header-left {
-          width: 63%;
+          width: 41%;
+          padding: 10px 0 0;
         }
         .price {
           font-size: 1.2em;
@@ -403,7 +405,6 @@
           </div>
         </div>
       </div>
-      <div class="badge"></div>
     </nav>
     <main>
       <header>
@@ -413,6 +414,8 @@
               class="headshot"
               src="./img/tony-coady-commissioner-of-oaths.png"
               alt="Tony Coady Commissioner of Oaths"
+              width="436"
+              height="436"
             />
           </div>
           <div class="header-right">
@@ -427,6 +430,8 @@
                 <img
                   src="./img/tonycoady-fredericton-best3.png"
                   alt="ThreeBestRated Top of 2018 Mark of Excellence"
+                  width="500"
+                  height="446"
                 />
               </a>
             </div>
