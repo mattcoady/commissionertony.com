@@ -4,8 +4,7 @@
     <meta charset="UTF-8" />
     <title>Fredericton Commissioner of Oaths</title>
     <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.png" />
-    <link rel="preconnect" href="https://fonts.gstatic.com/" />
-    <link rel="preconnect" href="https://ajax.googleapis.com/" />
+    <link rel="preload" as="image" href="./img/bg.webp" type="image/webp" fetchpriority="high" />
     <meta name="theme-color" content="#ff502c" />
     <link rel="manifest" href="/manifest.json" />
     <meta
@@ -77,7 +76,7 @@
       }
 
       header {
-        background: url(./img/bg.jpg) center center no-repeat #282e3e;
+        background: url(./img/bg.webp) center center no-repeat #282e3e;
         background-size: cover;
       }
 
@@ -191,7 +190,7 @@
       }
 
       .services .left {
-        background: url(./img/sign-document.jpg) center no-repeat;
+        background: url(./img/sign-document.webp) center no-repeat;
       }
 
       .services .right {
@@ -223,7 +222,7 @@
       }
 
       .money .right {
-        background: url(./img/save-money.jpg) center no-repeat;
+        background: url(./img/save-money.webp) center no-repeat;
       }
 
       .money h2:after {
@@ -409,13 +408,17 @@
       <header>
         <div class="wrap">
           <div class="header-left">
-            <img
-              class="headshot"
-              src="./img/tony-coady-commissioner-of-oaths.png"
-              alt="Tony Coady Commissioner of Oaths"
-              width="436"
-              height="436"
-            />
+            <picture>
+              <source srcset="./img/tony-coady-commissioner-of-oaths.webp" type="image/webp" />
+              <img
+                class="headshot"
+                src="./img/tony-coady-commissioner-of-oaths.png"
+                alt="Tony Coady Commissioner of Oaths"
+                width="436"
+                height="436"
+                fetchpriority="high"
+              />
+            </picture>
           </div>
           <div class="header-right">
             <small class="subheadline">Fast and courteous</small>
@@ -426,12 +429,16 @@
                 target="_blank"
                 rel="noopener"
               >
-                <img
-                  src="./img/tonycoady-fredericton-best3.png"
-                  alt="ThreeBestRated Top of 2018 Mark of Excellence"
-                  width="500"
-                  height="446"
-                />
+                <picture>
+                  <source srcset="./img/tonycoady-fredericton-best3.webp" type="image/webp" />
+                  <img
+                    src="./img/tonycoady-fredericton-best3.png"
+                    alt="ThreeBestRated Top of 2018 Mark of Excellence"
+                    width="500"
+                    height="446"
+                    loading="lazy"
+                  />
+                </picture>
               </a>
             </div>
           </div>
